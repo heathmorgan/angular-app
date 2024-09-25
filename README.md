@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+# Angular Material
+Followed the guide at https://material.angular.io/guide/getting-started to add Angular Material.
+
+    ng add @angular/material
+
+Additionally, added a slide toggle, changed theme to dark style, and added an address form via the schematic:
+
+    ng generate @angular/material:address-form my-address-form
+
+As per https://material.angular.io/guide/theming#pre-built-themes, I had to also manually modify index.html to add mat-app-background to the "body" element.
