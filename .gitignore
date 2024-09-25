@@ -12,7 +12,7 @@ npm-debug.log
 yarn-error.log
 
 # IDEs and editors
-.idea/
+#.idea/
 .project
 .classpath
 .c9/
@@ -40,3 +40,11 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# JetBrains tools
+# https://intellij-support.jetbrains.com/hc/en-us/articles/206544839-How-to-manage-projects-under-Version-Control-Systems
+# See also .idea/.gitignore
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+**/*.iml
