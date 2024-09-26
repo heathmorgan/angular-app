@@ -13,7 +13,7 @@
 $angular-app-theme: mat.define-theme((
   color: (
     theme-type: dark, // was light
-    primary: mat.$magenta-palette,
+    primary: mat.$azure-palette,
     tertiary: mat.$violet-palette,
   ),
   density: (
