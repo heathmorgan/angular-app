@@ -36,3 +36,11 @@ Additionally, added a slide toggle, changed theme to dark style, and added an ad
     ng generate @angular/material:address-form my-address-form
 
 As per https://material.angular.io/guide/theming#pre-built-themes, I had to also manually modify index.html to add mat-app-background to the "body" element.
+
+Used all available component schematics to add navigation, dashboard, table, and tree
+as per https://material.angular.io/guide/schematics
+
+    ng generate @angular/material:table my-table
+    ng generate @angular/material:navigation my-navigation
+    ng generate @angular/material:dashboard my-dashboard
+    ng generate @angular/material:tree my-tree
