@@ -17,7 +17,7 @@ $angular-app-theme: mat.define-theme((
     tertiary: mat.$violet-palette,
   ),
   density: (
-    scale: -3,
+    scale: -5,
   )
 ));
 
@@ -26,7 +26,7 @@ $angular-app-theme: mat.define-theme((
 // that you are using.
 :root {
   @include mat.all-component-themes($angular-app-theme);
-  //@include mat.color-variants-backwards-compatibility($angular-app-theme); // Might help, from https://medium.com/@raultonello18/angular-material-m3-dynamic-runtime-colors-6d6d1036d2bb
+  @include mat.color-variants-backwards-compatibility($angular-app-theme); // Might help, from https://medium.com/@raultonello18/angular-material-m3-dynamic-runtime-colors-6d6d1036d2bb
   //background-color: lightgrey;
 }
 
@@ -37,6 +37,24 @@ $angular-app-theme: mat.define-theme((
 // Comment out the line below if you want to use the deprecated `color` inputs.
 // @include mat.color-variants-backwards-compatibility($angular-app-theme);
 /* You can add global styles to this file, and also import other style files */
+
+// See https://material.angular.io/guide/theming#using-component-color-variants
+.primary-button {
+  @include mat.button-color($angular-app-theme, $color-variant: primary)
+}
+.secondary-button {
+  @include mat.button-color($angular-app-theme, $color-variant: secondary)
+}
+.tertiary-button {
+  @include mat.button-color($angular-app-theme, $color-variant: tertiary)
+}
+// Warn in the old M2 => error in the new M3
+.warn-button {
+  @include mat.button-color($angular-app-theme, $color-variant: error)
+}
+.error-button {
+  @include mat.button-color($angular-app-theme, $color-variant: error)
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
